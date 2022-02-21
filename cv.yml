@@ -1,0 +1,127 @@
+---
+# Personal Details
+name: Charles YING
+email: charles.ying@outlook.com
+address:
+    - street: "Yongsan-Gu, XXX-Dong, XXX-XX"
+      code: 04XXX
+      city: Seoul, SOUTH KOREA
+phone: "+82 10 9547 XXXX"
+username: charlesyg
+urls:
+    - url: www.linkedin.com/in/charles-ying-%EC%9E%89-%EC%B0%B0%EC%8A%A4-19b50442/
+      logo: "static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png"
+      name: linkedin
+    - url: www.github.com/charlesyg
+      logo: "raw.githubusercontent.com/ICI3D/ICI3D.github.io/master/images/GitHub-Logos/GitHub-Mark-32px.png"
+      name: github
+
+# Sections
+experience:
+    - from: 2019
+      to: Today
+      employer: McKinsey \& Company
+      url: www.mckinsey.com
+      job: Consultant - Senior Fellow Data Scientist
+      city: Seoul, South Korea
+      description: "Consulted as Lead Data Scientist in multiple industries, on various use cases, from optimisation to machine learning. Led development of internal asset for MIP/OR (data science stream, 4 DS/DE)"
+      accomplishments:
+          - Successfully consulted in data science projects in many different industries (Pharmaceutical, Chemical, Oil&Gas, Agriculture, ...) developping and putting in production various use cases, from predictive to prescriptive solutions.
+          - Full Stack competencies. Back-end, front-end, machine learning, databases, cloud solutions... Mainly Python language.
+    - from: 2018
+      to: 2019
+      employer: Safran Aircraft Engines - DataLab
+      url: www.safran-group.com/
+      job: Data Scientist
+      city: Moissy-Cramayel, France
+      description: "Led the development of predictive maintenance and optimisation algorithms for various business units. Built data-science process and data-driven practices to democratize data-science throughout R&D department"
+      accomplishments:
+          - Optimisation algorithm reduced part rework by 12%
+          - Work on predictive maintenance presented in [16th Conference on Condition Monitoring and Asset Management, 2019](https://www.bindt.org/events/CM2019/116-abstract/)
+    - from: 2016
+      to: 2018
+      employer: Safran Aircraft Engines - Control R\&T
+      url: www.safran-group.com/
+      job: Control System Lead Engineer
+      city: Moissy-Cramayel, France
+      description: "Led the Research & Technology team (4 people, X00k€) to design cutting-edge control and fault detection algorithms for future autonomous drone. Drew and executed technology maturation roadmaps – project, planning, fund management"
+      accomplishments:
+          - Fault detection readiness is critical for project continuation. Got approved by client
+          - Patent on engine control and fault detection [here](https://www.inpi.fr/sites/default/files/bopis/bopi2024.pdf) 
+    - from: 2014
+      to: 2016
+      employer: Safran Aircraft Engines - Open Rotor Control System
+      url: www.safran-group.com/
+      job: Control System Engineer
+      city: Moissy-Cramayel, France
+      description: "Designed, implemented and verified (V-cycle) embedded software control logics to operate gas turbine actuators on Open Rotor Demo engine"
+      accomplishments:
+          - Successful regulation of sub-systems in scope during demo test
+    - from: 2011
+      to: 2013
+      employer: University of Illinois at Urbana Champaign - Decision & Control Lab
+      url: https://csl.illinois.edu/research/groups/decision-and-control
+      job: Research Assistant
+      city: Illinois, USA
+      description: "Tackled implementational challenges of Lyapunov Stability analysis for nonlinear dynamical systems. Designed the concept of Almost Lyapunov Functions and its applicative algorithm"
+      accomplishments:
+          - Published in [53rd IEEE Conference on Decision and Control, 2014](https://ieeexplore.ieee.org/document/7039864)
+          - Research work followed up with many contributions
+
+education:
+    - year: 2015--Today
+      subject: MOOCs, certifications and nanodegrees
+      institute: EdX, Coursera, Udemy
+      description: "AWS cloud practitioner certification. Reinforcement learning. Machine Learning"
+    - year: 2017--2017
+      subject: Big data specialisation (auditing)
+      institute: Conservatoire National des Arts et Métiers
+      url: www.cnam.eu/site-en/
+      description: "Document-oriented database, statistics and data mining, Big Data engineering"
+    - year: 2011--2013
+      subject: Electrical Engineering - MSc
+      institute: University of Illinois at Urbana-Champaign
+      url: www.illinois.edu/
+      description: "Applied Mathematics, Control, Optimization, Computer Science"
+    - year: 2009--2011
+      subject: Diplôme d'ingénieur - MSc
+      institute: Ecole Centrale Lille
+      url: https://centralelille.fr
+      description: "Mechanics, Computer Science, Thermodynamics, Business strategy"
+
+
+languages:
+    - skill: French
+      description: Native
+    - skill: English
+      description: Bilingual
+    - skill: Chinese
+      description: Native
+    - skill: Spanish
+      description: Notions
+    - skill: Korean
+      description: Notions
+
+skills:
+    - skill: Algorithms
+      description: Supervized learning, deep learning, mixed integer programming, reinforcement learning, optimal and adaptive control, Kalman filters
+    - skill: Python
+      description: Scipy, Scikit Learn, Pandas, Keras, Pytorch, OpenAI Gym, Dash
+    - skill: Cloud
+      description: AWS EC2, RDS, S3, Lambda
+    - skill: Other
+      description: bash, git, svn, Tableau, Docker, SQL
+    - skill: Product development
+      description: MLOps, Agile, SCRUM, technology maturation, impact sizing
+    - skill: Product management tools
+      description: Jira, Confluence, Trello, MS Project, IBM Change, Doors
+
+
+interests:
+    - Personal project cryptocurrency trading bot
+    - Soccer, Judo, Taekwondo, bike, hiking, go-baduk
+
+# Settings:
+fontsize: 10pt
+font: merriweather
+---

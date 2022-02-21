@@ -1,0 +1,131 @@
+%----------------------------------------------------------------------------------------
+%                             JB KOPECKY CV
+%                         jb.kopecky@gmail.com
+%---------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS                                        {{{
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=25mm,top=26mm,right=25mm,bottom=15mm]{geometry}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont{Baskerville}
+
+\usepackage{xltxtra,url,parskip,multicol,fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+% \usepackage[big]{layaureo}
+\usepackage{hyperref}
+
+% Colors Definition
+\definecolor{linkcolour}{gray}{0.40}
+\definecolor{comment}{gray}{0.40}
+\definecolor{lightcomment}{gray}{0.85}
+\definecolor{accent}{rgb}{0.24,0.0,0.0}
+
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\usepackage{titlesec}
+\titleformat{\section}{\color{accent}\Large\scshape\raggedright}{}{0em}{}[\color{comment}\titlerule]
+\titlespacing{\section}{0pt}{0pt}{0pt}
+
+\begin{document}
+\pagestyle{empty} % Removes page numbering
+% \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+% }}}
+%----------------------------------------------------------------------------------------
+%    NAME AND CONTACT INFORMATION                                                      {{{
+%----------------------------------------------------------------------------------------
+
+% \addtolength{\voffset}{-1.3cm}
+\par{\centering{\Huge\textcolor{accent}{$name$}}\par} % Your name
+\par{\centering{
+$if(address)$
+$for(address)$
+\textcolor{comment}{$address.street$} 
+\textcolor{lightcomment}{$$~~\bullet~~$$}
+\textcolor{comment}{$address.code$}
+\textcolor{lightcomment}{$$~~\bullet~~$$}
+\textcolor{comment}{$address.city$}
+\\
+$endfor$
+$endif$
+$if(phone)$
+\textcolor{comment}{\faPhone~~$phone$}
+\textcolor{lightcomment}{$$~~\bullet~~$$}
+$endif$
+\textcolor{comment}{\faLinkedin~\faGithub~~$username$}
+\textcolor{lightcomment}{$$~~\bullet~~$$}
+\textcolor{comment}{\faEnvelope~~\href{mailto:$email$}{$email$}}
+}\bigskip\par}
+
+% }}}
+%----------------------------------------------------------------------------------------
+%    EDUCATION                                                                         {{{
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+$for(education)$
+$education.year$ & $education.subject$\textcolor{lightcomment}{$$~~\bullet~~$$} \href{http://$education.url$}{$education.institute$}\\
+                 &\textsf{\small{$education.description$}}\\
+$endfor$
+\end{tabular}
+
+% }}}
+%----------------------------------------------------------------------------------------
+%    WORK EXPERIENCE                                                                   {{{
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{14cm}}
+$for(experience)$
+$experience.to$   & $experience.job$\\
+$experience.from$ & \textsc{$experience.employer$}\textcolor{lightcomment}{$$~~\bullet~~$$}\textcolor{comment}{$experience.city$} \\
+                  & \footnotesize{\textsf{\textbf{$experience.description$}} }\\
+$for(experience.accomplishments)$ 
+\textcolor{lightcomment}{$$\bullet$$} & \footnotesize{\textsf{$experience.accomplishments$}}\\
+$endfor$
+\multicolumn{2}{c}{} \\
+$endfor$
+\end{tabular}
+% }}}
+%----------------------------------------------------------------------------------------
+%    COMPUTER SKILLS                                                                   {{{
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+\begin{description}
+$for(skills)$
+\item[$skills.skill$]\textsf{$skills.description$}
+$endfor$
+\end{description}
+
+% }}}
+%----------------------------------------------------------------------------------------
+%    LANGUAGES                                                                         {{{
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\begin{tabular}{rl}
+$for(languages)$
+\textsc{$languages.skill$:} & $languages.description$\\
+$endfor$
+\end{tabular}
+
+% }}}
+%----------------------------------------------------------------------------------------
+%    INTERESTS AND ACTIVITIES                                                          {{{
+%----------------------------------------------------------------------------------------
+
+\section{Personal}
+$for(interests)$
+\textcolor{lightcomment}{$$~~\bullet~~$$}\textsf{$interests$}\\
+$endfor$
+
+\end{document}
+% }}}
+%----------------------------------------------------------------------------------------
